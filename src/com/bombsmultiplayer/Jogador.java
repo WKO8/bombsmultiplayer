@@ -10,12 +10,18 @@ public class Jogador {
         this.pontos = 0;
         this.pontosSerie = 0;
     }
+    
 
     // Getters e Setters
     public String getNome() { return nome; }
     public int getPontos() { return pontos; }
     public int getPontosSerie() { return pontosSerie; }
     public void addPonto() { pontos++; }
+
+    public void setPontos(int pontos) {
+        this.pontos = pontos;
+    }
+    
     public void resetPontos() { pontos = 0; }
     public void addSerie() { pontosSerie += pontos; }
 }
